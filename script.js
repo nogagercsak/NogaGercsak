@@ -43,3 +43,83 @@ document.querySelector('[data-toggle="collapse"]').addEventListener('click', fun
     const isExpanded = target.classList.contains('show');
     this.classList.toggle('show', !isExpanded);
 });
+
+// Gallery horizontal scrolling functionality - minimalist version
+document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery-grid');
+    const prevBtn = document.querySelector('.gallery-prev');
+    const nextBtn = document.querySelector('.gallery-next');
+    
+    if (gallery && prevBtn && nextBtn) {
+        // Set scroll amount to the width of one gallery item plus a bit more
+        const scrollAmount = 250; // Adjusted for smaller images
+        
+        // Scroll left button
+        prevBtn.addEventListener('click', function() {
+            gallery.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Scroll right button
+        nextBtn.addEventListener('click', function() {
+            gallery.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            // Only respond to arrow keys if the gallery is in the viewport
+            const rect = gallery.getBoundingClientRect();
+            const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+            
+            if (isInViewport) {
+                if (e.key === 'ArrowLeft') {
+                    gallery.scrollBy({
+                        left: -scrollAmount,
+                        behavior: 'smooth'
+                    });
+                } else if (e.key === 'ArrowRight') {
+                    gallery.scrollBy({
+                        left: scrollAmount,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+        
+        // Add swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        gallery.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        gallery.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+        
+        function handleSwipe() {
+            const swipeThreshold = 30; // Lower threshold for easier swiping
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe left, scroll right
+                gallery.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+            if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe right, scroll left
+                gallery.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    }
+});
