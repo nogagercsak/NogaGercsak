@@ -3,7 +3,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
-        const targetId = this.getAttribute('href').substring(1).toLowerCase(); // Convert to lowercase
+        const targetId = this.getAttribute('href').substring(1).toLowerCase(); 
         const targetSection = document.getElementById(targetId);
 
         if (targetSection) {
@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //typing effect for title
 const nameElement = document.getElementById("nameTitle");
 const nameText = nameElement.textContent;
-nameElement.textContent = ""; // Clear the initial text
+nameElement.textContent = "";
 
 
 let index = 0;
@@ -28,7 +28,7 @@ function typeNextLetter() {
 if (index < nameText.length) {
 nameElement.textContent += nameText.charAt(index);
 index++;
-setTimeout(typeNextLetter, 100); // Adjust the typing speed (in milliseconds) here
+setTimeout(typeNextLetter, 200); 
 }
 }
 
