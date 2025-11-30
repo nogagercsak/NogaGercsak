@@ -434,6 +434,52 @@ body {
 }
 
 /* ================================================
+   QUOTES SECTION
+   ================================================ */
+.quote-before-footer {
+    padding: 4rem 0 3rem;
+    background-color: #0e1117;
+}
+
+.quote-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.quote-intro {
+    font-family: 'Carlito', sans-serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #a9b6c9;
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.quote-content {
+    margin-bottom: 0;
+}
+
+.quote-text {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    line-height: 2;
+    color: #f5f1ea;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.quote-author {
+    font-family: 'Carlito', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #a9b6c9;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* ================================================
    GALLERY SECTION
    ================================================ */
 .gallery-section {

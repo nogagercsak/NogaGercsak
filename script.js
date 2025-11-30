@@ -123,3 +123,78 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// ================================================
+// QUOTES SECTION
+// ================================================
+
+const quotes = [
+    {
+        text: "You may encounter many defeats, but you must not be defeated. In fact, it may be necessary to encounter the defeats, so you can know who you are, what you can rise from, how you can still come out of it.",
+        author: "Maya Angelou"
+    },
+    {
+        text: "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.",
+        author: "Frank Herbert, Dune"
+    },
+    {
+        text: "Anyone can cook. But only the fearless can be great.",
+        author: "Ratatouille"
+    },
+    {
+        text: "When you're playing a point, it has to be the most important thing in the world. And it is. But when it's behind you, it's behind you.",
+        author: "Roger Federer"
+    },
+    {
+        text: "If you think adventure is dangerous, try routine. It is lethal.",
+        author: "Paul Coelho, The Alchemist"
+    },
+    {
+        text: "You think your pain and your heartbreak are unprecedented in the history of the world, but then you read.",
+        author: "James Baldwin"
+    },
+    {
+        text: "In the depth of winter, I finally learned that within me there lay an invincible summer.",
+        author: "Albert Camus"
+    },
+    {
+    text: "The most dangerous phrase in the language is, 'We've always done it this way.'",
+    author: "Grace Hopper"
+    }
+];
+
+let currentQuoteIndex = -1;
+
+// Function to get a random quote that's different from the current one
+function getRandomQuote() {
+    if (quotes.length === 0) return null;
+    if (quotes.length === 1) return quotes[0];
+
+    let newIndex;
+    do {
+        newIndex = Math.floor(Math.random() * quotes.length);
+    } while (newIndex === currentQuoteIndex);
+
+    currentQuoteIndex = newIndex;
+    return quotes[newIndex];
+}
+
+// Function to display a quote
+function displayQuote() {
+    const quote = getRandomQuote();
+    if (quote) {
+        const quoteText = document.getElementById('quoteText');
+        const quoteAuthor = document.getElementById('quoteAuthor');
+
+        if (quoteText && quoteAuthor) {
+            quoteText.textContent = `"${quote.text}"`;
+            quoteAuthor.textContent = `— ${quote.author}`;
+        }
+    }
+}
+
+// Initialize quotes section when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Display a random quote on page load
+    displayQuote();
+});
