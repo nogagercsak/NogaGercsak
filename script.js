@@ -1,4 +1,3 @@
-// Smooth scrolling when clicking on navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -33,7 +32,6 @@ setTimeout(typeNextLetter, 200);
 }
 
 
-// Start the typing effect when the page loads
 typeNextLetter();
 
 
@@ -51,10 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.querySelector('.gallery-next');
     
     if (gallery && prevBtn && nextBtn) {
-        // Set scroll amount to the width of one gallery item plus a bit more
-        const scrollAmount = 250; // Adjusted for smaller images
-        
-        // Scroll left button
+        const scrollAmount = 250; 
         prevBtn.addEventListener('click', function() {
             gallery.scrollBy({
                 left: -scrollAmount,
@@ -62,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Scroll right button
         nextBtn.addEventListener('click', function() {
             gallery.scrollBy({
                 left: scrollAmount,
@@ -70,9 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Add keyboard navigation
         document.addEventListener('keydown', function(e) {
-            // Only respond to arrow keys if the gallery is in the viewport
             const rect = gallery.getBoundingClientRect();
             const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
             
@@ -91,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Add swipe support for mobile
         let touchStartX = 0;
         let touchEndX = 0;
         
@@ -105,16 +96,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }, { passive: true });
         
         function handleSwipe() {
-            const swipeThreshold = 30; // Lower threshold for easier swiping
+            const swipeThreshold = 30; 
             if (touchEndX < touchStartX - swipeThreshold) {
-                // Swipe left, scroll right
                 gallery.scrollBy({
                     left: scrollAmount,
                     behavior: 'smooth'
                 });
             }
             if (touchEndX > touchStartX + swipeThreshold) {
-                // Swipe right, scroll left
                 gallery.scrollBy({
                     left: -scrollAmount,
                     behavior: 'smooth'
@@ -193,8 +182,6 @@ function displayQuote() {
     }
 }
 
-// Initialize quotes section when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Display a random quote on page load
     displayQuote();
 });
