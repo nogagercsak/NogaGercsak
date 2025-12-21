@@ -1,235 +1,520 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Noga Gercsak</title>
-    <!-- Link Bootstrap CSS -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3MH49E4FV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C3MH49E4FV');
+    </script>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    <!-- link the webpage's stylesheet -->
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css"/>
-
-    <!-- link the webpage's JavaScript file -->
+    
+    <!-- JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
     <script src="script.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
 
- </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#home">home</a>
+            <a href="#experience">experience</a>
+            <a href="#projects">projects</a>
+            <a href="#awards">awards</a>
+            <a href="#gallery">gallery</a>
+        </div>
+    </nav>
 
- <body>
-    
-  <nav class="navbar">
-    <div class="navbar-content">
-        <a href="#home">home</a>
-        <a href="#experience">experience</a>
-        <a href="#projects">projects</a>
-        <a href="#awards">awards</a>
-        <a href="blog.html">writing</a>
-    </div>
-  </nav>
-
-
-  <section class="home-section" id="home">
-
-    <header>
-        <h1 id="nameTitle">Noga Gercsak</h1>
-    </header> 
-
-    <p class="desc">I'm a high school student from Charlotte, NC.<br> I'm interested in computer science, enviormental science, and human-computer interaction.</p>
-      
-    <p class = "desc">Feel free to email me at noga.gercsak@gmail.com or reach out on the social media platforms linked bellow. <br> Keep scrolling to learn more about me!</p>
-    <div id="socials">
-      <a href="https://github.com/nogagercsak" target="_blank"><img id="gitHub" src="assets/gitHub.png" alt="GitHub"></a>
-      <a href="https://www.instagram.com/nogahadasah/" target="_blank"><img id="insta" src="assets/instagram.png" alt="Instagram"></a>
-      <a href="https://www.linkedin.com/in/noga-gercsak-739b88286/" target="_blank"><img id="linkedin" src="assets/linkedIn.png" alt="LinkedIn"></a>      
-    </div>
-  </section>
-
-    <section class="experience-gallery" id ="experience">
-      <p id="experience-title">Experience</p>
-
-      <div class="experience-individual">
-        <b> ⚙️ Harvey Mudd WiSTEM </b>
-        <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Dec. 2024—Now</span>
-        <p class="exp-desc"> Selected to be one of the 30 participants out of 150 applicants for the Women’s Inclusion in Science, Technology, Engineering & Mathematics (WISTEM) program. This fully funded six-month initiative provided me with an on-campus residential experience and interactive virtual sessions. Through this program, I had the opportunity to connect with a cohort of peers, gain insights into STEM admissions, and deepen my understanding of women's experiences in STEM.
-        </p>
-      </div>
-
-      <div class="experience-individual">
-        <b> ⭐️ Researcher @ UNCC </b>
-        <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Sep. 2024—Now</span>
-        <p class="exp-desc"> Currently conducting research in the College of Computing and Informatics Department under Dr. Faklaris. My research is about the impact of AI on the environment. I am using Python and TensorFlow to create a model that can predict the environmental impact of AI models. I am also working on a paper that will be submitted to the 2025 AAAI Conference.
-        </p>
-      </div>
-
-      <div class="experience-individual">
-        <b> 🔬 Research Intern @ UNCC AEOP</b>
-        <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;June 2024—Aug. 2024</span>
-        <p class="exp-desc"> Conducted research in the College of Computing and Informatics Department under Dr. Krishnan. My research was about detecting hate speech using methods such as sentiment analyis and causal analyis. I used Google Colab and Python to tune existing ML models to better detect hate speech in online spaces. Recieved a stipend of $4,500 through the Army Educational Outreach Program. Interested in reading my paper? Email me!
-        </p>
-      </div>
-
-      <div class="experience-individual">
-        <b> 🗽 The Junior Academy</b>
-        <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Sep. 2023—Now</span>
-        <p class="exp-desc"> I was selected as one of the top 10% applicants from over 100 countries to collaborate with a global community in creating innovative solutions to global challenges. In 2023, I participated in the Minerals of Technology Challenge, and currently, I am leading my team in the 2024 challenge to develop an ethical AI tool.
-        </p>
-      </div>
-
-      <div class="experience-individual">
-        <b> 🐠 Intern @ Lightpalace Productions</b>
-        <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Jul. 2023—Aug 2023</span>
-        <p class="exp-desc"> I assisted with social media and video making. I created new videos to post, manaaged Instagram and TikTok of the company, and contributed new ideas to help gain traction. I assisted with Increased Instagram accounts engagement by 448% and accounts reach by 909%
-
-        </p>
-      </div>
-
-      <div class="experience-individual">
-        <b> 💻 Kode With Klossy Scholar</b>
-        <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Jul. 10, 2023—Jul. 21, 2023</span>
-        <p class="exp-desc"> I was a part of the Mobile App program. During the program, I learned Swift and SwiftUI. I used Xcode to create a fully-functioning iOS-capable mobile app with two other teammates. Our app was designed to help users learn more about food waste and food conservation, along with the ability to log foods.
-        </p>
-      </div>
-
-      <div class="experience-individual">
-        <b> 💻 Girls Who Code Scholar</b>
-        <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Jul. 2023—Aug. 2023</span>
-        <p class="exp-desc"> I participated in the summer self-paced program. I completed the three tracks provided including the Data Science Track, Web Dev Track, and Cybersecurity Track. Check out my projects to learn more about what I made!
-        </p>
-      </div>
-
-      
-
+    <!-- Home Section -->
+    <section class="home-section" id="home">
+        <div class="container">
+            <header>
+                <h1 id="nameTitle">Noga Gercsak</h1>
+            </header>
+            
+            <p class="desc">Hi! I'm Noga, an incoming freshman at Carnegie Mellon CS from Charlotte, NC.<br>
+                I'm interested in computer science, sustainability, and human-computer interaction.</p>
+            
+            <p class="desc">Feel free to email me at noga.gercsak@gmail.com or reach out on the social media platforms linked below.</p>
+            
+            <div id="socials">
+                <a href="https://github.com/nogagercsak" target="_blank">
+                    <img src="assets/gitHub.png" alt="GitHub">
+                </a>
+                <!-- <a href="https://www.instagram.com/nogahadasah/" target="_blank">
+                    <img src="assets/instagram.png" alt="Instagram">
+                </a> -->
+                <a href="https://www.linkedin.com/in/noga-gercsak/" target="_blank">
+                    <img src="assets/linkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
     </section>
 
+    <!-- Experience Section -->
+    <section class="experience-gallery" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-individual hoverable-experience">
+                <b>🏙️ NYU GSTEM Researcher</b>
+                <span>June 2025—Now</span>
+                <p class="exp-desc">Conducting research under Dr. Saptarshi Debroy on privacy-preserving AI systems that protect personal data when smart devices collaborate with cloud servers for processing, developing adaptive algorithms that automatically adjust privacy protection levels based on data sensitivity and network conditions in real-time.</p>
+
+                <div class="circular-images">
+                    <div class="circle-img">
+                        <img src="assets/gallery/photo11.jpeg" alt="NYU Research">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/gstem/chip.jpeg" alt="NYU Research">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/gstem/friends.jpeg" alt="NYU Research">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-individual hoverable-experience-left">
+                <b>👾 Hackathon Founder & Organizer</b>
+                <span>Apr. 2024—Now</span>
+                <p class="exp-desc">Co-founded the UNC Charlotte Teen Hackathon, a dynamic event empowering teenagers across the Charlotte Metro Area to develop their programming, project-building, and collaboration skills. The hackathon has impacted 50+ students, providing them with hands-on experience and mentorship from industry professionals, including experts from Bank of America.</p>
+
+                <div class="circular-images">
+                    <div class="circle-img">
+                        <img src="assets/gallery/photo6.jpeg" alt="Hackathon">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/gallery/photo7.jpg" alt="Hackathon">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/hackathon/hackathon.jpeg" alt="Hackathon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-individual hoverable-experience">
+                <b>⚡️ Researcher @ UNCC</b>
+                <span>Sep. 2024—Jan. 2025</span>
+                <p class="exp-desc">Conducted research in the College of Computing and Informatics Department under Dr. Faklaris, focusing on enhancing cybersecurity in smart grids through innovative blockchain and differential privacy approaches. <a href="research.html" class="research-link">Read more about my research →</a></p>
+
+                <div class="circular-images">
+                    <div class="circle-img">
+                        <img src="assets/gallery/photo10.jpg" alt="Research">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/research/JSHS.jpeg" alt="Research">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/research/paper.jpeg" alt="Research">
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Experience Button -->
+            <div class="grid-container">
+                <a href="#" class="research-link" data-toggle="collapse" data-target="#experienceCollapse" aria-expanded="false" aria-controls="experienceCollapse">
+                    View More Experience →
+                </a>
+            </div>
+
+            <!-- Collapsed Experience Section -->
+            <div class="collapse" id="experienceCollapse">
+                <div class="card card-body">
+
+
+              <div class="experience-individual hoverable-experience">
+                <b>🧪 BHS Girls in STEM President</b>
+                <span>Jun. 2024—Now</span>
+                <p class="exp-desc">Founder and president of my high school's Girls in STEM club, where female students can connect and explore topics in STEM. When I first entered high school, I joined the coding club only to find myself alone as the only girl. I founded Girls in STEM because I know how community and inclusion is essenital to exploring science. We go on field trips, explore topics in science and math, and lead community STEM outreach!</p>
+         
+                <div class="circular-images">
+                    <div class="circle-img">
+                        <img src="assets/bhs/photo1.png" alt="HMC">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/bhs/photo2.png" alt="HMC">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/bhs/photo3.png" alt="HMC">
+                    </div>
+                </div>
+         
+            </div>
+
+            <div class="experience-individual hoverable-experience-left">
+                <b>⚙️ Harvey Mudd WiSTEM</b>
+                <span>Dec. 2024—Apr. 2025</span>
+                <p class="exp-desc">Selected to be one of the 30 participants out of 150 applicants for the Women's Inclusion in Science, Technology, Engineering & Mathematics (WISTEM) program. This fully funded six-month initiative provided me with an on-campus residential experience and interactive virtual sessions. Through this program, I had the opportunity to connect with a cohort of peers, gain insights into STEM admissions, and deepen my understanding of women's experiences in STEM.</p>
+
+                <div class="circular-images">
+                    <div class="circle-img">
+                        <img src="assets/hmc/friends2.jpeg" alt="HMC">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/gallery/photo3.jpeg" alt="HMC">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="experience-individual hoverable-experience">
+                <b>🔬 Research Intern @ UNCC AEOP</b>
+                <span>June 2024—Aug. 2024</span>
+                <p class="exp-desc">Conducted research in the College of Computing and Informatics Department under Dr. Krishnan. My research was about detecting hate speech using methods such as sentiment analysis and causal analysis. I used Google Colab and Python to tune existing ML models to better detect hate speech in online spaces. Received a stipend of $4,500 through the Army Educational Outreach Program.</p>
+
+                <div class="circular-images">
+                    <div class="circle-img">
+                        <img src="assets/gallery/photo2.jpeg" alt="Research">
+                    </div>
+                    <div class="circle-img">
+                        <img src="assets/research/aeop.jpeg" alt="Research">
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-individual">
+                <b>🗽 The Junior Academy</b>
+                <span>Sep. 2023—Now</span>
+                <p class="exp-desc">I was selected as one of the top 10% applicants from over 100 countries to collaborate with a global community in creating innovative solutions to global challenges. In 2023, I participated in the Minerals of Technology Challenge, and currently, I am leading my team in the 2024 challenge to develop an ethical AI tool.</p>
+            </div>
+
+            <div class="experience-individual">
+                <b>🐠 Intern @ Lightpalace Productions</b>
+                <span>Jul. 2023—Aug 2023</span>
+                <p class="exp-desc">I assisted with social media and video making. I created new videos to post, managed Instagram and TikTok of the company, and contributed new ideas to help gain traction. I assisted with increased Instagram accounts engagement by 448% and accounts reach by 909%.</p>
+            </div>
+
+            <div class="experience-individual">
+                <b>💻 Kode With Klossy Scholar</b>
+                <span>Jul. 10, 2023—Jul. 21, 2023</span>
+                <p class="exp-desc">I was a part of the Mobile App program. During the program, I learned Swift and SwiftUI. I used Xcode to create a fully-functioning iOS-capable mobile app with two other teammates. Our app was designed to help users learn more about food waste and food conservation, along with the ability to log foods.</p>
+            </div>
+
+            <div class="experience-individual">
+                <b>💻 Girls Who Code Scholar</b>
+                <span>Jul. 2023—Aug. 2023</span>
+                <p class="exp-desc">I participated in the summer self-paced program. I completed the three tracks provided including the Data Science Track, Web Dev Track, and Cybersecurity Track. Check out my projects to learn more about what I made!</p>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section class="project-gallery" id="projects">
-      <p id="project-gallery-title">Project Gallery</p>
-      <div class="project-container">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-container">
+                <a href="https://www.mazah.app/" target="_blank" class="project-big">
+                    <div class="proj-text-b">
+                        <h3 class="proj-title-b">♻️ Mazah</h3>
+                        <p class="proj-desc-b">An app designed to reduce food waste starting with our daily routines. Funded by National Geographic.</p>
+                    </div>
+                </a>
 
-        <a href="https://mazah.vercel.app/" target="_blank" class="project-big">
-          <div class="proj-text-b">
-              <h2 class="proj-title-b">Mazah ♻️</h2>
-              <p class="proj-desc-b">An app designed to reduce food waste starting with our daily routines. Funded by National Geographic.</p>
-          </div>
-          <img class="proj-pic-b" src="assets/mazah.png" alt="Mazah">
-        </a>
+                <a href="https://github.com/nogagercsak/BiasShield" target="_blank" class="project-big">
+                    <div class="proj-text-b">
+                        <h3 class="proj-title-b">⚖️ Bias Shield</h3>
+                        <p class="proj-desc-b">A Python-based machine learning tool that detects and mitigates algorithmic bias in AI systems through visual analytics, addressing the critical need for fairness and ethical decision-making in modern AI deployment.</p>
+                    </div>
+                </a>
 
-        <a href="https://www.youtube.com/watch?v=hkXKcevvxZI" target="_blank" class="project-big">
-          <div class="proj-text-b">
-              <h2 class="proj-title-b">ZeroTrace 🚗</h2>
-              <p class="proj-desc-b">ZeroTrace is a carbon footprint tracking app for drivers that provides insights and recommendations for reducing emissions. It promotes eco-friendly driving habits and encourages sustainable practices.</p>
-          </div>
-          <img class="proj-pic-b" src="assets/ZEROTRACE (1).png" alt="Mazah">
-        </a>
+                <a href="https://github.com/nogagercsak/WDS-Project" target="_blank" class="project-big">
+                    <div class="proj-text-b">
+                        <h3 class="proj-title-b">🌲 WDS Project: Forest Fire Risk Prediction</h3>
+                        <p class="proj-desc-b">A custom rule-based machine learning model developed for NYU's Winston Data Scholars Program that predicts forest fire risk using meteorological data, achieving a 91.36% fire detection rate to prioritize public safety over precision in emergency management scenarios.</p>
+                    </div>
+                </a>
+            </div>
 
-        <a href="https://devpost.com/software/causemate" target="_blank" class="project-big">
-          <div class="proj-text-b">
-              <h2 class="proj-title-b">CauseMate 🫶</h2>
-              <p class="proj-desc-b">An app designed to connect students and local nonprofits and organizations, facilitating engagement in meaningful community service projects. </p>
-          </div>
-          <img class="proj-pic-b" src="assets/causeMate.png" alt="Cause Mate">
-        </a>
-      
+            <!-- View More Projects Button -->
+            <div class="grid-container">
+                <a href="#" class="research-link" data-toggle="collapse" data-target="#projectsCollapse" aria-expanded="false" aria-controls="projectsCollapse">
+                    View More Projects →
+                </a>
+            </div>
 
-      <!-- More project entries -->
+            <!-- Collapsed Projects Section -->
+            <div class="collapse" id="projectsCollapse">
+                <div class="card card-body">
 
-    <div class="grid-container">
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#projectsCollapse" aria-expanded="false" aria-controls="projectsCollapse">
-          View More Projects <span class="arrow">&darr;</span>
-      </button>
-    </div>
-  
+                    <div class="project">
+                        <a href="https://devpost.com/software/resq-lx3nsh" target="_blank" class="proj-title">Aid-Up</a>
+                        <p class="proj-desc"> A location-based platform that connects disaster-affected individuals with available aid and local organizations to support.</p>
+                    </div>
 
-    <div class="collapse" id="projectsCollapse">
+                    <div class="project">
+                        <a href="https://devpost.com/software/causemate" target="_blank" class="proj-title">CauseMate</a>
+                        <p class="proj-desc">An app designed to connect students and local nonprofits and organizations, facilitating engagement in meaningful community service projects.</p>
+                    </div>
 
-        <div class="card card-body" style="background-color: #181e29;">
-  
-          <div class="project">
-            <a class="proj-title" style="text-decoration:none" href="   https://webkind-dev.github.io/FaizaFinance/index.html" target="_blank">Faiza Finance</a>
-            <p class="proj-desc">Website developer for Faiza Finance, a nonprofit encouraging muslim students to achieve financial literacy.</p>
-          </div>
+                    <div class="project">
+                        <p class="proj-title">ZeroTrace</p>
+                        <p class="proj-desc">ZeroTrace is a carbon footprint tracking app for drivers that provides insights and recommendations for reducing emissions. It promotes eco-friendly driving habits and encourages sustainable practices.</p>
+                    </div>
 
-          <div class="project">
-            <a class="proj-title" style="text-decoration:none" href="https://www.figma.com/file/zODzX4cedsOpRyjVADY92j/Salus?type=design&node-id=0-1&mode=design&t=DGYd3YYNEekRyTJC-0" target="_blank">Salus</a>
-            <p class="proj-desc">This was my group's submission for the FearLess, Tech More Innovation Challenge. We created a prototype for an app called, "Salus" on figma. Salus is a food wellness app designed to help you manage your diet by providing meal plans, alternatives, and recipes tailored to your personal preferences.</p>
+
+                    <div class="project">
+                        <a class="proj-title" href="https://webkind-dev.github.io/FaizaFinance/index.html" target="_blank">Faiza Finance</a>
+                        <p class="proj-desc">Website developer for Faiza Finance, a nonprofit encouraging muslim students to achieve financial literacy.</p>
+                    </div>
+
+                    <div class="project">
+                        <a class="proj-title" href="https://www.figma.com/file/zODzX4cedsOpRyjVADY92j/Salus?type=design&node-id=0-1&mode=design&t=DGYd3YYNEekRyTJC-0" target="_blank">Salus</a>
+                        <p class="proj-desc">This was my group's submission for the FearLess, Tech More Innovation Challenge. We created a prototype for an app called, "Salus" on figma. Salus is a food wellness app designed to help you manage your diet by providing meal plans, alternatives, and recipes tailored to your personal preferences.</p>
+                    </div>
+                
+                    <div class="project">
+                        <a class="proj-title" href="https://github.com/nogagercsak/taskSubmissionPIN" target="_blank">Carbon Tracker</a>
+                        <p class="proj-desc">This is my group's task submission for the Uber Hackathon 2023. We developed an app using Swift and SwiftUI that allows users to track their carbon emissions and find local areas to donate to.</p>
+                    </div>
+              
+                    <div class="project">
+                        <a class="proj-title" href="https://nogagercsak.github.io/InnoMine/" target="_blank">InnoMine Website</a>
+                        <p class="proj-desc">I created this website while participating in the 2023 Minerals fo Technology Challenge. This website is aimed to help people across the US to find local e-waste recycling centers and inform others on the issue of e-waste.</p>
+                    </div>
+              
+                    <div class="project">
+                        <a class="proj-title" href="https://nogagercsak.github.io/index.html" target="_blank">Ocean Conservation Website</a>
+                        <p class="proj-desc">I created this website during Girls Who Code SPP 2023, for my final project. I coded it with HTML & CSS, along with JavaScript to create an ocean fact generator.</p>
+                    </div>
+              
+                    <div class="project">
+                        <a class="proj-title" href="https://github.com/nogagercsak/empoweringData.git" target="_blank">Project Empower</a>
+                        <p class="proj-desc">I used pandas to create scatter plot, comparing the percent of women with secondary education over time from Haiti with Ethiopia.</p>
+                    </div>
+              
+                    <div class="project">
+                        <a class="proj-title" href="https://github.com/nogagercsak/Cipher-Usability" target="_blank">Cipher Usability</a>
+                        <p class="proj-desc">I programmed this in python to allow users to input any message they would like to encrypt or decrypt, using Caeser's Cipher. The cipher can have a key ranging from 0 to 93.</p>
+                    </div>
+              
+                    <div class="project">
+                        <a class="proj-title" href="https://github.com/nogagercsak/Cracking-Caesars-Cipher" target="_blank">Cracking Caesar's Cipher</a>
+                        <p class="proj-desc">This program was made with python that allows users to input an encrypted message without knowing the key. Then, the program will go through all the possible messages that the encrypted message has, ranging from keys 0-93.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-        <div class="project">
-          <a class="proj-title" style="text-decoration:none" href="https://github.com/nogagercsak/taskSubmissionPIN" target="_blank">Carbon Tracker</a>
-          <p class="proj-desc">This is my group's task submission for the Uber Hackathon 2023. We developed an app using Swift and SwiftUI that allows users to track their carbon emissions and find local areas to donate to. </p>
-      </div>
-  
-          <div class="project">
-            <a class="proj-title" style="text-decoration:none" href="https://nogagercsak.github.io/InnoMine/" target="_blank">InnoMine Website </a>
-            <p class="proj-desc">I created this website while participating in the 2023 Minerals fo Technology Challenge. This website is aimed to help people across the US to find local e-waste recyling centers and inform others on the issue of e-waste.</p>
-        </div>
-  
-          <div class="project">
-            <a class="proj-title" style="text-decoration:none" href="https://nogagercsak.github.io/index.html" target="_blank">Ocean Conservation Website</a>
-            <p class="proj-desc"> I created this website during Girls Who Code SPP 2023, for my final project. I coded it with HTML & CSS, along with JavaScript to create an ocean fact generator.</p>
-        </div>
-  
-          <div class="project">
-            <a class="proj-title" style="text-decoration:none" href="https://github.com/nogagercsak/empoweringData.git" target="_blank">Project Empower</a>
-              <p class="proj-desc">I used pandas to create scatter plot, comparing the percent of women with secondary education over time from Haiti with Ethiopia.</p>
-          </div>
-  
-          <div class="project">
-            <a class="proj-title" style="text-decoration:none" href="https://github.com/nogagercsak/Cipher-Usability" target="_blank">Cipher Usability</a>
-            <p class="proj-desc">I progammed this in python to allow users to input any message they would like to encrypt or decrypt, using Caeser's Cipher. The cipher can have a key ranging from 0 to 93.</p>
-        </div>
-  
-          <div class="project">
-            <a class="proj-title" style="text-decoration:none" href="https://github.com/nogagercsak/Cracking-Caesars-Cipher" target="_blank">Cracking Caesar's Cipher </a>
-            <p class="proj-desc">This program was made with python that allows users to input an encrypted message without knowing the key. Then, the program will go through all the possible messages that the encrypted message has, ranging from keys 0-93.</p>
-        </div>
-
-        <!-- More project entries -->
-    </div>  
-      </div>
-
     </section>
-    
 
-
-    
-
+    <!-- Awards Section -->
     <section class="project-gallery" id="awards">
-      <p id="project-gallery-title">Awards</p>
-      <div class="project-container">
-  
-        <div class="experience-individual">
-          <a href="https://www.nationalgeographic.org/society/projects/slingshot/award-recipients/" target="_blank"style="text-decoration: none; color: inherit;"><b>🌍 National Geographic Slingshot Challenge Winner</b></a>
-          <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;May 2024</span>
-          <p class="exp-desc"> Selected to recieve $10,000 from National Geographic for project, Mazah, out of 2,100 applicants internationally. Chosen as team leader to represent our project at the National Geographic Explorer's Festival in Washington D.C.</p>
+        <div class="container">
+            <h2 class="section-title">Awards</h2>
+            
+            <!-- Top Awards -->
+
+            <a href="https://www.nationalgeographic.org/society/projects/slingshot/award-recipients/" target="_blank">
+                <div class="experience-individual featured-award">
+                    <b class="proj-title">🌍 National Geographic Slingshot Challenge Winner</b>
+                    <span>May 2024</span>
+                    <p class="exp-desc">Selected to receive $10,000 from National Geographic for project, Mazah, out of 2,100 applicants internationally. Chosen as team leader to represent our project at the National Geographic Explorer's Festival in Washington D.C.</p>
+                </div>
+            </a>
+    
+
+            <div class="experience-individual featured-award">
+                <b>📊 Winston Data Scholar @ NYU</b>
+                <span>June 2025</span>
+                <p class="exp-desc">Selected as 1 of 10 recipients from over 200 applicants for a $5,500 scholarship covering tuition for a data science course and the GSTEM summer research program.</p>
+            </div>
+
+            <div class="experience-individual featured-award">
+                <b>🔬 NC Junior Science & Humanities Symposium</b>
+                <span>February 2025</span>
+                <p class="exp-desc">Received First Place Overall in the Poster Presentation (1/100+). Competed in the Engineering and Technology Category. Qualified for National JSHS.</p>
+            </div>
+
+            <!-- View More Awards Button -->
+
+            <div class="grid-container">
+                <a href="#" class="research-link" data-toggle="collapse" data-target="#additionalAwards" aria-expanded="false" aria-controls="additionalAwards">
+                    View More Awards →
+                </a>
+            </div>
+
+            <!-- Additional Awards (Collapsed) -->
+            <div class="collapse" id="additionalAwards">
+                <div class="card card-body additional-awards">
+            
+                    <a href="https://www.usaeop.com/program/travel-awards/" target="_blank">
+                        <div class="awards-individual compact-award">
+                            <p class="tiny-desc">AEOP Travel Award - $2,500 to present research at IEEE AI IoT conference.</p>
+                            <span>May 2025</span>
+                        </div>
+                    </a>
+
+                    <a href="https://readysetapp.devpost.com/project-gallery?_gl=1*1vxaqod*_gcl_au*MTg1MzgyNzc0MS4xNzUyMTY4NjE3*_ga*MjAyNDYyMjMxMC4xNzUyMTY4NjE4*_ga_0YHJK3Y10M*czE3NTY5NTIzMzYkbzQkZzEkdDE3NTY5NTIzNDMkajUzJGwwJGgw" target="_blank">
+                        <div class="awards-individual compact-award">
+                            <p class="tiny-desc">Ready, Set, App! Finalist - Top 9/50+ finalist, presented app at Lenovo HQ.</p>
+                            <span>April 2025</span>
+                        </div>
+                    </a>
+
+                    <a href="https://research.charlotte.edu/departments/center-research-excellence-cre/ignite-planning-grants/" target="_blank">
+                        <div class="awards-individual compact-award">
+                            <p class="tiny-desc">UNCC Ignite Research Grant - 1 of 3 recipients for $1,000 research funding.</p>
+                            <span>November 2025</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.aspirations.org/news/award-programs/2024-national-aspirations-in-computing-award-recipients-announced-" target="_blank">
+                        <div class="awards-individual compact-award">
+                            <p class="tiny-desc">NCWIT Aspirations in Computing - National Honorable Mention (400/3,300 applicants).</p>
+                            <span>January 2025</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="experience-individual">
-          <a href="https://www.aspirations.org/news/award-programs/2024-national-aspirations-in-computing-award-recipients-announced-" target="_blank" style="text-decoration: none; color: inherit;"><b>👩‍💻 NCWIT Aspirations in Computing National Honorable Mention</b></a>
-          <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Jan. 2024</span>
-          <p class="exp-desc"> Selected as part of the 400 out of 3,300 applicants. Recived award in honor of accomplishements in computing.</p>
-        </div>
-
-        <div class="experience-individual">
-          <a href="https://hackswift.devpost.com/project-gallery?page=2/" target="_blank" style="text-decoration: none; color: inherit;"><b>🪩 HackSwift Winner Honorable Mention</b></a>
-          <span style="position: relative; left: 10px; font-size: 25px;">&nbsp;Jan. 2024</span>
-          <p class="exp-desc"> HackSwift is the premier hackathon hosted by HackSwift, a non-profit committed to inspiring, educating, and fostering collaboration among the upcoming generation of innovators
-          </p>
-        </div>
-
-      </div>
-
     </section>
 
-  <footer class="copyright">
-      <p> Created with ♡ by Noga Gercsak.</p>
-  </footer>
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container gallery-container">
+            <h2 class="section-title">Gallery</h2>
+            
+            <div class="gallery-grid">
 
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo11.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>Presenting Research @ NYU</p>
+                    </div>
+                </div>
 
- </body>
- </html>
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo13.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>National JSHS 2025 </p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo1.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>National Geographic Exploer's Festival 2024</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo10.jpg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>IEEE AI IoT 2025, Seattle, WA</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo2.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>AEOP Research presentation 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo3.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>Harvey Mudd WiSTEM 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo9.jpg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>Nat Geo HQ 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo12.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>NCWiT Awards 2025 </p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo4.jpeg" alt="Gallery image">
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo5.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>Pomona College</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo6.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>Teen Hackathon 2025</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo7.jpg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>Teen Hackathon 2025</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/gallery/photo8.jpeg" alt="Gallery image">
+                    <div class="gallery-caption">
+                        <p>George Washington Sustainability Dept. </p>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+            <!-- Gallery navigation controls -->
+            <div class="gallery-controls">
+                <button class="gallery-control gallery-prev">←</button>
+                <button class="gallery-control gallery-next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <div class="quote-before-footer" id="quotes">
+        <div class="container">
+            <div class="quote-container">
+                <p class="quote-intro">a moment of wisdom before you go...</p>
+                <div class="quote-content">
+                    <p class="quote-text" id="quoteText"></p>
+                    <p class="quote-author" id="quoteAuthor"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="copyright">
+        <p>thanks for visiting! ✨</p>
+        <p>Created with ♡ by Noga Gercsak.</p>
+    </footer>
+</body>
+</html>
