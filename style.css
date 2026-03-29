@@ -655,6 +655,17 @@ body {
     text-decoration: underline;
 }
 
+.any-link {
+    color: #437975;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.any-link:hover {
+    color: #ff87eb;
+    text-decoration: underline;
+}
+
 .link-icon {
     width: 20px;
     height: 20px;
