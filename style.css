@@ -38,7 +38,7 @@ body {
     color: #f5f1ea;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
    ================================================ */
 .navbar {
     background-color: #181e29;
-    padding: 15px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -69,9 +69,9 @@ body {
 .navbar-content a {
     color: #f5f1ea;
     text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.2rem;
-    padding: 8px 16px;
+    margin: 0 12px;
+    font-size: 1rem;
+    padding: 6px 12px;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
@@ -85,16 +85,21 @@ body {
    HOME SECTION
    ================================================ */
 .home-section {
-    padding: 5% 10%;
-    margin-bottom: 2rem;
+    padding: 3% 10%;
+    margin-bottom: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 #nameTitle {
     color: #f5f1ea;
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-family: 'Lora', serif;
     font-weight: 600;
-    margin: 3rem auto 2rem;
+    margin: 1.5rem auto 1rem;
     text-align: left;
     max-width: 700px;
 }
@@ -102,17 +107,17 @@ body {
 .desc {
     color: #f5f1ea;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     max-width: 700px;
-    margin: 1rem auto;
-    line-height: 1.8;
+    margin: 0.5rem auto;
+    line-height: 1.65;
 }
 
 #socials {
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 1rem;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -134,11 +139,11 @@ body {
 #experience-title,
 #project-gallery-title {
     font-family: 'Lora', serif;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 600;
     color: #f5f1ea;
     text-align: left;
-    margin: 4rem auto 2.5rem;
+    margin: 2.5rem auto 1.25rem;
     max-width: 700px;
 }
 
@@ -153,15 +158,15 @@ body {
 .experience-gallery,
 .project-gallery {
     max-width: 1000px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 2rem;
     padding: 0 5%;
     overflow: visible;
 }
 
 .experience-individual,
 .awards-individual {
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
     transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.4s ease;
     max-width: 700px;
@@ -309,9 +314,9 @@ body {
 }
 
 .experience-individual b {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .experience-individual span {
@@ -339,6 +344,52 @@ body {
 }
 
 /* ================================================
+   VIEW MORE COLLAPSED CONTENT (shared)
+   ================================================ */
+.more-item {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(169, 182, 201, 0.15);
+}
+
+.more-item:last-child {
+    border-bottom: none;
+}
+
+.more-item b {
+    font-size: 0.88rem;
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #f5f1ea;
+}
+
+.more-item a {
+    font-size: 0.88rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.2rem;
+    color: #437975;
+    text-decoration: none;
+}
+
+.more-item a:hover {
+    color: #ff87eb;
+}
+
+.more-item span {
+    font-size: 0.75rem;
+    color: #a9b6c9;
+    display: block;
+    margin-bottom: 0.1rem;
+}
+
+.more-item p {
+    font-size: 0.78rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #f5f1ea;
+}
+
+/* ================================================
    PROJECTS SECTION
    ================================================ */
 .project-container {
@@ -349,7 +400,7 @@ body {
 
 .project-big {
     display: block;
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 12px;
     text-decoration: none;
     color: inherit;
@@ -366,8 +417,8 @@ body {
 }
 
 .proj-title-b {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
     color: #f5f1ea;
 }
 
@@ -379,7 +430,7 @@ body {
 
 /* Collapsed projects */
 .project {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     border-bottom: 1px solid rgba(169, 182, 201, 0.2);
 }
 
@@ -388,7 +439,7 @@ body {
 }
 
 .proj-title {
-    font-size: 1.4rem;
+    font-size: 0.75rem;
     font-weight: bold;
     color: #f5f1ea;
     text-decoration: none;
@@ -437,7 +488,7 @@ body {
    QUOTES SECTION
    ================================================ */
 .quote-before-footer {
-    padding: 4rem 0 3rem;
+    padding: 2.5rem 0 2rem;
     background-color: #0e1117;
 }
 
@@ -463,10 +514,10 @@ body {
 
 .quote-text {
     font-family: 'Lora', serif;
-    font-size: 1.4rem;
-    line-height: 2;
+    font-size: 1.2rem;
+    line-height: 1.7;
     color: #f5f1ea;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -483,7 +534,7 @@ body {
    GALLERY SECTION
    ================================================ */
 .gallery-section {
-    padding: 3rem 0 2rem;
+    padding: 1.5rem 0 1rem;
     background-color: #0e1117;
 }
 
@@ -603,8 +654,8 @@ body {
 .research-card {
     background-color: #181e29;
     border-radius: 12px;
-    padding: 2rem;
-    margin: 3rem auto 2rem;
+    padding: 1.5rem;
+    margin: 2rem auto 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 700px;
 }
@@ -759,7 +810,7 @@ body {
 
     /* Projects */
     .proj-title-b {
-        font-size: 1.5rem;
+        font-size: 0.75rem;
     }
 
     /* Show more link */
